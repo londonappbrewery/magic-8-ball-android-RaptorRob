@@ -1,13 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+    android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:paddingBottom="16dp"
     tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="@string/headlineText"
+        android:textColor="@color/colorTextHeadline"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView8Ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/contentDescriptionImageView8Ball"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/ball1" />
+
+    <Button
+        android:id="@+id/buttonAsk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView8Ball"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:height="40dp"
+        android:background="@color/colorButtonPrimary"
+        android:gravity="center_vertical|center_horizontal"
+        android:minWidth="100dp"
+        android:text="@string/buttonText"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorButtonTextPrimary"
+        android:textSize="20sp" />
+
+
 </RelativeLayout>
